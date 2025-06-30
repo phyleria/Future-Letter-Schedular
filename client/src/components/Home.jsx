@@ -12,12 +12,12 @@ const Home = () => {
         </h1>
         <p className="text-xl text-gray-600 mb-8 leading-relaxed">
           Send yourself a message to read later. 
-          What would you want to remember?
+          What would you like to tell your future self?
         </p>
         <button
           onClick={() => navigate('/write')}
-          className="bg-black text-white px-8 py-3 rounded hover:bg-gray-800 transition-colors"
-        >
+          className="text-white px-8 py-3 rounded transition-colors hover:opacity-90"
+          style={{ backgroundColor: '#EB8214' }}        >
           Write a letter
         </button>
       </div>

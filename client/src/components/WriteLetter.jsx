@@ -9,7 +9,7 @@ const WriteLetter = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate API call
     setTimeout(() => {
       console.log({ email, message, date });
@@ -76,7 +76,8 @@ const WriteLetter = () => {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-black text-white py-3 rounded hover:bg-gray-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full text-white py-3 rounded hover:opacity-90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          style={{ backgroundColor: '#EB8214' }}
         >
           {isSubmitting ? 'Scheduling...' : 'Schedule letter'}
         </button>
